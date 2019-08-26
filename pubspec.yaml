@@ -45,6 +45,7 @@ dependencies:
   #极光推送
   jpush_flutter: 0.0.11
   provider: ^2.0.1+1
+  #https://www.jianshu.com/p/031a36e99196: 顶部悬浮
   flutter_tableview: ^1.0.1
   json_annotation: ^2.4.0 # json注解
 
