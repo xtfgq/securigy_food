@@ -66,12 +66,22 @@ class _AboutPageState extends State<AboutPage> {
     );
   }
 
+//  _launchURL() async {
+//    final String number = "tel:+15537175968";
+//    if (await canLaunch(number)) {
+//      await launch(number);
+//    } else {
+//      throw 'Could not launch $number';
+//    }
+//  }
+  ///调用地图导航
   _launchURL() async {
-    final String number = "tel:+15537175968";
-    if (await canLaunch(number)) {
-      await launch(number);
+    const url = 'androidamap://keywordNavi?sourceApplication=softname&keyword=宛委山景区&style=2';
+    if (await canLaunch(url)) {
+      await launch(url);
     } else {
-      throw 'Could not launch $number';
+      throw 'Could not launch $url';
     }
   }
+
 }
